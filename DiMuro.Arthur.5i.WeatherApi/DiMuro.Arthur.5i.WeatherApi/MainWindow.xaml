@@ -1,0 +1,34 @@
+﻿<Window x:Class="DiMuro.Arthur._5i.WeatherApi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiMuro.Arthur._5i.WeatherApi"
+        mc:Ignorable="d"
+        Title="Arthur Di Muro - Weather API" Height="350" Width="525" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images\hd_wallpaper_3606.jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="TB_City" HorizontalAlignment="Left" Height="23" Margin="0,26,0,0" TextWrapping="Wrap" Text="Rimini" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TB_Altitudine" HorizontalAlignment="Left" Height="23" Margin="309,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" TextAlignment="Right"/>
+        <TextBox x:Name="TB_Latitudine" HorizontalAlignment="Left" Height="23" Margin="309,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" TextAlignment="Right"/>
+        <TextBox x:Name="TB_Longitudine" HorizontalAlignment="Left" Height="23" Margin="309,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" TextAlignment="Right"/>
+        <Button x:Name="BN_GO" Content="Meteo" HorizontalAlignment="Left" Margin="0,54,0,0" VerticalAlignment="Top" Width="75" Click="BN_GO_Click"/>
+        <Image x:Name="ImgMeteo" HorizontalAlignment="Left" Height="100" Margin="204,0,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="TB_TemperatureC" HorizontalAlignment="Left" Height="23" Margin="309,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" TextAlignment="Right"/>
+        <TextBox x:Name="TB_TemperatureF" HorizontalAlignment="Left" Height="23" Margin="449,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" TextAlignment="Right"/>
+        <TextBox x:Name="TB_Humidity" HorizontalAlignment="Left" Height="23" Margin="309,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" TextAlignment="Right"/>
+        <TextBox x:Name="TB_VelocitàVento" HorizontalAlignment="Left" Height="23" Margin="309,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" TextAlignment="Right"/>
+        <TextBox x:Name="TB_Visibilità" HorizontalAlignment="Left" Height="23" Margin="309,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" TextAlignment="Right"/>
+        <Label x:Name="LBL_Altitude" Content="Altitudine" HorizontalAlignment="Left" Margin="309,2,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LBL_Latitude" Content="Latitudine" HorizontalAlignment="Left" Margin="309,28,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LBL_Longitude" Content="Longitudine" HorizontalAlignment="Left" Margin="309,54,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LBL_City" Content="Città" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="LBL_Temperaure" Content="Temperatura" HorizontalAlignment="Left" Margin="309,80,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LBL_Humidity" Content="Umidità" HorizontalAlignment="Left" Margin="309,106,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LBL_VelocitàVento" Content="Velocità del vento" HorizontalAlignment="Left" Margin="309,132,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LBL_Visibilità" Content="Visibilità" HorizontalAlignment="Left" Margin="309,158,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
